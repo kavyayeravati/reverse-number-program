@@ -1,0 +1,22 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+import java.util.Scanner;
+
+public class ReverseNumber {
+   public ReverseNumber() {
+   }
+
+   public static void main(String[] var0) {
+      Scanner var1 = new Scanner(System.in);
+      System.out.print("Enter a number:");
+      int var2 = var1.nextInt();
+
+      int var3;
+      for(var3 = 0; var2 != 0; var2 /= 10) {
+         int var4 = var2 % 10;
+         var3 = var3 * 10 + var4;
+      }
+
+      System.out.println("Reverse number=" + var3);
+      var1.close();
+   }
+}
